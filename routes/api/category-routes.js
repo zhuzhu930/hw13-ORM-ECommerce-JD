@@ -16,11 +16,12 @@ router.get('/', async (req, res) => {
   } 
 });
 //GET a single category
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findByPk(req.params.id, {
+      //? This part not so sure.
       include: [ { model: Product }]
     });
 
@@ -36,8 +37,13 @@ router.get('/:id', (req, res) => {
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new category
+  try {
+    const categoryData = await Category.create({
+      //stopped here.
+    })
+  }
 });
 
 router.put('/:id', (req, res) => {
