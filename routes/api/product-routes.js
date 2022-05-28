@@ -17,13 +17,13 @@ router.get('/', async (req, res) => {
   }
 });
 
-// get one product
+// ? get one product---Not working with (500)SequelizeEagerLoading Error 
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
   try {
     const productData = await Category.findByPk(req.params.id, {
-      include: [{ model: Category }, {model: Tag}]
+      include: [{ model: Category }, { model: Tag }]
     });
 
     if (!productData) {
@@ -38,7 +38,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// create new product
+// create new product---working
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
@@ -70,7 +70,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// update product
+// update product---need to figure out how to test this.
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -112,6 +112,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// This route is working properly
 router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
   try {
