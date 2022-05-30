@@ -81,11 +81,12 @@ SOFTWARE.
 ## Demo URLs
 
 Please feel free to take a look at the demo videos of this app:
-Demo Part 1:
-[Demo link](https://drive.google.com/file/d/18COJumi4hc0g9Jg2bc7Xkln_RYA0yx86/view)
 
-Demo Part 2:
-[Demo link](https://drive.google.com/file/d/1O0Yeq5t727ibhJu-F5HST-VqClUpqIri/view)
+- Demo Part 1:
+  [Demo link](https://drive.google.com/file/d/18COJumi4hc0g9Jg2bc7Xkln_RYA0yx86/view)
 
-Demo Part 3:
-[Demo link](https://drive.google.com/file/d/1SbWbXE-8djj3KQUX7oGANOgrtD6KGhCx/view)
+- Demo Part 2:
+  [Demo link](https://drive.google.com/file/d/1O0Yeq5t727ibhJu-F5HST-VqClUpqIri/view)
+
+- Demo Part 3:
+  [Demo link](https://drive.google.com/file/d/1SbWbXE-8djj3KQUX7oGANOgrtD6KGhCx/view)
